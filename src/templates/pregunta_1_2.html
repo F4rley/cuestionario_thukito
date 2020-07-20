@@ -1,0 +1,142 @@
+{% extends "layout.html"%}
+{%block content%}
+<div class="jumbotron">
+    <!--Contenedor de preguntas 1-->
+    <div class="container p-4">
+        <!--Contenedor de preguntas 1-->
+        <p align="justify">¿A cuanto asciendo su gasto mensual de compras? (Según su elección
+            anterior gasto diario, semanal, quincenal, mensual debe proyectar a "Mensual")
+        </p>
+        <ul>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_5" value="option5">
+                <label class="form-check-label" for="q_5">
+                    Entre S/260 - S/400
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_6" value="option6">
+                <label class="form-check-label" for="q_6">
+                    Entre S/400 - S/650
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_7" value="option7">
+                <label class="form-check-label" for="q_7">
+                    Entre S/650 - S/1,000
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_8" value="option8">
+                <label class="form-check-label" for="q_8">
+                    Entre S/1,000 - mas
+                </label>
+            </div>
+        </ul>
+        <!--Fin Contenedor de preguntas 1-->
+        <!--Inicio Contenedor de preguntas 2-->       
+        <p align="justify">¿Dónde suele realizar sus compras con mayor frecuencia?</p>
+        <ul>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_9" value="option9" >
+                <label class="form-check-label" for="q_9">
+                    Bodegas
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_10" value="option10">
+                <label class="form-check-label" for="q_10">
+                    Mercados Locales (Cerca de su uicación)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_11" value="option11">
+                <label class="form-check-label" for="q_11">
+                    Supermercados (Plaza Vea, Tottus, Metro, otros)
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_12" value="option12">
+                <label class="form-check-label" for="q_12">
+                    Mercado Mayorista en Chiclayo
+                </label>
+            </div>
+        </ul>
+        <!--Fin Contenedor de preguntas 2-->
+
+        <!--Inicio Contenedor de preguntas 3-->       
+        <p align="justify">¿Cómo evaluas la atención al cliente en tu lugar de compra elegido
+            en la pregunta anterior?
+        </p>
+        <ul>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_13" value="option13" >
+                <label class="form-check-label" for="q_13">
+                    Muy Buena
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_14" value="option14">
+                <label class="form-check-label" for="q_14">
+                    Buena
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_15" value="option15">
+                <label class="form-check-label" for="q_15">
+                    Regular
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_16" value="option16">
+                <label class="form-check-label" for="q_16">
+                    Malo
+                </label>
+            </div>
+        </ul>
+        <!--Fin de Contenedor de preguntas 3-->
+
+        <!--Inicio Contenedor de preguntas 4-->       
+        <p align="justify">¿Que es lo principal que debe contener tu lista de compras
+            al planificarla? - Enumera segun tu prioridad. (Frutas y Verduras, Proteinas,
+            Conservas, Articulos de Limpieza, Otros)
+        </p>
+        <ul>
+            <div class="input-group input-group-sm col-7 ">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">1</span>
+                </div>
+                    <input type="text" class="form-control fix-rounded-right -sm-2" required>
+            </div>
+            <div class="input-group input-group-sm col-7 ">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">2</span>
+                </div>
+                    <input type="text" class="form-control fix-rounded-right -sm-2" required>
+            </div>
+            <div class="input-group input-group-sm col-7 ">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">3</span>
+                </div>
+                    <input type="text" class="form-control fix-rounded-right -sm-2" required>
+            </div>
+            <div class="input-group input-group-sm col-7 ">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">4</span>
+                </div>
+                    <input type="text" class="form-control fix-rounded-right -sm-2" required>
+            </div>                                    
+        </ul>
+        <!--Fin de Contenedor de preguntas 4-->        
+
+
+        <!-- Button trigger modal -->
+        <a href="/ecommerce">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Ahora sobre E-Commerce
+        </button>
+        </a>
+    </div>
+    <!--Contenedor de preguntas-->    
+</div>
+{%endblock%}

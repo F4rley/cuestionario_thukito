@@ -1,0 +1,67 @@
+{% extends "layout.html"%}
+{%block content%}
+<div class="jumbotron">
+    <h1 class="display-4">Bienvenido a Thukito</h1>
+    <p class="lead" align="justify">
+        Somos Thukito, una plataforma que busca mejorar el canal tradicional de compras y distribución de 
+        nuestros mercados locales y productores nacionales. Pronto podrás realizar las compras en tu mercado, 
+        sin ir al mercado!!!.</p>
+    <hr class="my-4">
+    <p align="justify">Necesitamos saber tus preferencias, para poder brindarte la mejor atención personalizada. Con tu ayuda podemos
+        lograr que Thukito sea parte de cada peruano. 
+    </p>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Registrarse en la Encuesta
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bienvenido</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Cuerpo del modal -->
+                <div class="modal-body">
+                    <form>
+                        <fieldset active>
+                            <div class="form-group">
+                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombres y apellidos">
+                            </div>
+                            <div class="form-group">
+                                <label for="disabledSelect">¿Tipo de usuario?</label>
+                                <select id="disabledSelect" class="form-control">
+                                    <option>Hogar</option>
+                                    <option>Bodega</option>
+                                    <option>Restaurante y Servicios</option>
+                                    <option>Hotel</option>
+                                    <option>Otros(Negocios varios)</option>
+                                </select>
+                            </div> 
+                            <div class="form-group">
+                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Correo Electrónico">
+                            </div> 
+                            <div class="form-group">
+                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Número de Celular">
+                            </div>                    
+                        </fieldset>
+                    </form>
+
+                </div>
+                <!-- Fin Cuerpo del modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <a href="/encuesta">
+                        <button type="button" class="btn btn-primary" role="button">Ir a encuesta</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

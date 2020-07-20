@@ -1,0 +1,123 @@
+{% extends "layout.html"%}
+{%block content%}
+<div class="jumbotron">
+    <!--Contenedor de preguntas 1-->
+    <div class="container p-4">
+        <h2 align="center"> Hablanos sobre tu experiencia con las compras por Internet</h2>
+        <!--Contenedor de preguntas 1-->
+        <p align="justify">¿Has realizado compras por internet?</p>
+        <ul>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_17" value="option17">
+                <label class="form-check-label" for="q_17">
+                    Si
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_18" value="option18">
+                <label class="form-check-label" for="q_18">
+                    No (Obvia las preguntas, y presiona el boton continuar)
+                </label>
+            </div>
+        </ul>
+        <!--Fin Contenedor de preguntas 1-->
+        <!--Inicio Contenedor de preguntas 2-->       
+        <p align="justify">¿Que plataformas de compras por internet conoces?</p>
+        <ul>
+            <div class="form-group col-7">
+                <label for="exampleFormControlTextarea1">Ejem :"Paginas Web, Aplicativos Moviles, 
+                    Fanpages, Otros"</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+        </ul>
+        <!--Fin Contenedor de preguntas 2-->
+
+        <!--Inicio Contenedor de preguntas 3-->       
+        <p align="justify">¿Cómo calificas tu experiencia de compras en las plataformas mencionadas en la
+            pregunta anterior?
+        </p>
+        <ul>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_13" value="option13" >
+                <label class="form-check-label" for="q_13">
+                    Muy Buena
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_14" value="option14">
+                <label class="form-check-label" for="q_14">
+                    Buena
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_15" value="option15">
+                <label class="form-check-label" for="q_15">
+                    Regular
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_16" value="option16">
+                <label class="form-check-label" for="q_16">
+                    Malo
+                </label>
+            </div>
+        </ul>
+        <!--Fin de Contenedor de preguntas 3-->
+
+        <!--Inicio Contenedor de preguntas 4-->       
+        <p align="justify">¿Que recompensa, bonificación recibes al comprar en las plataformas que mencionaste?
+        </p>
+        <ul>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_13" value="option13" >
+                <label class="form-check-label" for="q_13">
+                    Descuentos
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_14" value="option14">
+                <label class="form-check-label" for="q_14">
+                    Puntos por acumular compras
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_15" value="option15">
+                <label class="form-check-label" for="q_15">
+                    Si no llegan a tiempo, el pedido es gratis
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer" id="q_16" value="option16">
+                <label class="form-check-label" for="q_16">
+                    Cupones por recomendación
+                </label>
+            </div>
+        </ul>
+        <!--Fin de Contenedor de preguntas 4-->
+
+        <!--Inicio Contenedor de preguntas 5-->       
+        <p align="justify">¿Que servicio complementario te gustaría tener de estas plataformas mencionadas
+            en la pregunta n° 2?
+        </p>
+        <ul>
+            <div class="form-group col-7">
+                <label for="exampleFormControlTextarea1">Ejem "Poder devolver los productos errados sin costo",
+                    "Que mejoren el servicio post-venta", "Que verifquen la calidad antes de entregarme el producto",
+                    "Otros"
+                </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </ul>
+        <!--Fin de Contenedor de preguntas 5-->         
+
+
+        <!-- Button trigger modal -->
+        <a href="/precio">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Continuar
+        </button>
+        </a>
+    </div>
+    <!--Contenedor de preguntas-->    
+</div>
+{%endblock%}
