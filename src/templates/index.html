@@ -27,39 +27,37 @@
                     </button>
                 </div>
                 <!-- Cuerpo del modal -->
-                <div class="modal-body">
-                    <form>
-                        <fieldset active>
-                            <div class="form-group">
-                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombres y apellidos">
-                            </div>
-                            <div class="form-group">
-                                <label for="disabledSelect">¿Tipo de usuario?</label>
-                                <select id="disabledSelect" class="form-control">
-                                    <option>Hogar</option>
-                                    <option>Bodega</option>
-                                    <option>Restaurante y Servicios</option>
-                                    <option>Hotel</option>
-                                    <option>Otros(Negocios varios)</option>
-                                </select>
-                            </div> 
-                            <div class="form-group">
-                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Correo Electrónico">
-                            </div> 
-                            <div class="form-group">
-                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Número de Celular">
-                            </div>                    
-                        </fieldset>
-                    </form>
+                <form action ={{url_for("registrar")}} method="POST">
+                    <div class="modal-body">
+                            <fieldset active>
+                                <div class="form-group">
+                                    <input type="text" id="txtfullname" name="txtfullname" class="form-control" placeholder="Nombres y apellidos">
+                                </div>
+                                <div class="form-group">
+                                    <label for="txttypeuser">¿Tipo de usuario?</label>
+                                    <select id="txttypeuser" name="txttypeuser" class="form-control">
+                                        <option>Hogar</option>
+                                        <option>Bodega</option>
+                                        <option>Restaurante y Servicios</option>
+                                        <option>Hotel</option>
+                                        <option>Otros(Negocios varios)</option>
+                                    </select>
+                                </div> 
+                                <div class="form-group">
+                                    <input type="text" id="txtemailuser" name="txtemailuser" class="form-control" placeholder="Correo Electrónico">
+                                </div> 
+                                <div class="form-group">
+                                    <input type="text" id="numtelephone" name="numtelephone" class="form-control" placeholder="Número de Celular">
+                                </div>                    
+                            </fieldset>                   
 
-                </div>
-                <!-- Fin Cuerpo del modal -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <a href="/encuesta">
-                        <button type="button" class="btn btn-primary" role="button">Ir a encuesta</button>
-                    </a>
-                </div>
+                    </div>
+                    <!-- Fin Cuerpo del modal -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary" role="button">Ir a encuesta</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 {% extends "layout.html"%}
 {%block content%}
-<div class="jumbotron">
+<div class="jumbotron" action ={{url_for("encuesta")}} method="post">
     <h1 class="display-4" align="center">Bienvenido a Thukito</h1>
     <p class="lead" align="justify">
         Gracias por contribuir a nuestro estudio de introducción al Mercado; no olvides
@@ -12,27 +12,27 @@
         <p align="justify">¿Con que frecuencia realizas tus compras de suministros(Frutas, 
             Verduras, Abarrotes, Articulos de Limpieza, Carnes, Pollo) ?
         </p>
-        <ul>
+        <ul >
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="question" id="q_1" value="option1">
+                <input class="form-check-input" type="radio" name="answ_01" id="q_1" value="1">
                 <label class="form-check-label" for="q_1">
                     Diario
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="question" id="q_2" value="option2">
+                <input class="form-check-input" type="radio" name="answ_01" id="q_2" value="2">
                 <label class="form-check-label" for="q_2">
                     Semanal
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="question" id="q_3" value="option3">
+                <input class="form-check-input" type="radio" name="answ_01" id="q_3" value="3">
                 <label class="form-check-label" for="q_3">
                     Quincenal
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="question" id="q_4" value="option4">
+                <input class="form-check-input" type="radio" name="answ_01" id="q_4" value="4">
                 <label class="form-check-label" for="q_4">
                     Mensual
                 </label>
